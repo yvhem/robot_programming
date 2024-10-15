@@ -130,17 +130,17 @@ core_library/fast:
 .PHONY : core_library/fast
 
 #=============================================================================
-# Target rules for targets named many_object_in_stack_example
+# Target rules for targets named main
 
 # Build rule for target.
-many_object_in_stack_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 many_object_in_stack_example
-.PHONY : many_object_in_stack_example
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-many_object_in_stack_example/fast:
-	$(MAKE) $(MAKESILENT) -f executables/CMakeFiles/many_object_in_stack_example.dir/build.make executables/CMakeFiles/many_object_in_stack_example.dir/build
-.PHONY : many_object_in_stack_example/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f executables/CMakeFiles/main.dir/build.make executables/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -151,7 +151,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... core_library"
-	@echo "... many_object_in_stack_example"
+	@echo "... main"
 .PHONY : help
 
 

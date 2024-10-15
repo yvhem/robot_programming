@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-executables/CMakeFiles/many_object_in_stack_example.dir/rule:
-	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 executables/CMakeFiles/many_object_in_stack_example.dir/rule
-.PHONY : executables/CMakeFiles/many_object_in_stack_example.dir/rule
+executables/CMakeFiles/main.dir/rule:
+	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 executables/CMakeFiles/main.dir/rule
+.PHONY : executables/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-many_object_in_stack_example: executables/CMakeFiles/many_object_in_stack_example.dir/rule
-.PHONY : many_object_in_stack_example
+main: executables/CMakeFiles/main.dir/rule
+.PHONY : main
 
 # fast build rule for target.
-many_object_in_stack_example/fast:
-	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/many_object_in_stack_example.dir/build.make executables/CMakeFiles/many_object_in_stack_example.dir/build
-.PHONY : many_object_in_stack_example/fast
+main/fast:
+	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/main.dir/build.make executables/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 many_object_in_stack_example.o: many_object_in_stack_example.cpp.o
 .PHONY : many_object_in_stack_example.o
 
 # target to build an object file
 many_object_in_stack_example.cpp.o:
-	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/many_object_in_stack_example.dir/build.make executables/CMakeFiles/many_object_in_stack_example.dir/many_object_in_stack_example.cpp.o
+	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/main.dir/build.make executables/CMakeFiles/main.dir/many_object_in_stack_example.cpp.o
 .PHONY : many_object_in_stack_example.cpp.o
 
 many_object_in_stack_example.i: many_object_in_stack_example.cpp.i
@@ -143,7 +143,7 @@ many_object_in_stack_example.i: many_object_in_stack_example.cpp.i
 
 # target to preprocess a source file
 many_object_in_stack_example.cpp.i:
-	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/many_object_in_stack_example.dir/build.make executables/CMakeFiles/many_object_in_stack_example.dir/many_object_in_stack_example.cpp.i
+	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/main.dir/build.make executables/CMakeFiles/main.dir/many_object_in_stack_example.cpp.i
 .PHONY : many_object_in_stack_example.cpp.i
 
 many_object_in_stack_example.s: many_object_in_stack_example.cpp.s
@@ -151,7 +151,7 @@ many_object_in_stack_example.s: many_object_in_stack_example.cpp.s
 
 # target to generate assembly for a file
 many_object_in_stack_example.cpp.s:
-	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/many_object_in_stack_example.dir/build.make executables/CMakeFiles/many_object_in_stack_example.dir/many_object_in_stack_example.cpp.s
+	cd "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_01_compilers_and_build_systems" && $(MAKE) $(MAKESILENT) -f executables/CMakeFiles/main.dir/build.make executables/CMakeFiles/main.dir/many_object_in_stack_example.cpp.s
 .PHONY : many_object_in_stack_example.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... many_object_in_stack_example"
+	@echo "... main"
 	@echo "... many_object_in_stack_example.o"
 	@echo "... many_object_in_stack_example.i"
 	@echo "... many_object_in_stack_example.s"

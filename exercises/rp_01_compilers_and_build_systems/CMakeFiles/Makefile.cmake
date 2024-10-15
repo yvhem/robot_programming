@@ -52,5 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/core_library.dir/DependInfo.cmake"
-  "executables/CMakeFiles/many_object_in_stack_example.dir/DependInfo.cmake"
+  "executables/CMakeFiles/main.dir/DependInfo.cmake"
   )

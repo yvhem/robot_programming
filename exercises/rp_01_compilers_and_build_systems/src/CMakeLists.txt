@@ -25,12 +25,7 @@ target_include_directories(core_library PUBLIC
     .
 )   
 
-# these don't work
-# include_directories(.)
-# include_directories(./)
-# include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
 # TODO: Include the Eigen3 library to the list of libraries to link against
-target_link_libraries(core_library
-    Eigen3::Eigen
+target_link_libraries(core_library PUBLIC 
+    Eigen3::Eigen # module Eigen exported from the library Eigen3
 )
