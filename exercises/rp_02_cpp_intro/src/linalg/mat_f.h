@@ -2,60 +2,28 @@
 #include "vec_f.h"
 
 struct MatF {
-  int rows, cols, dimension; // guess what
-  float* v; // elements to the data
+    int rows, cols, dimension;
+    float* v;
+    
+    MatF();
+    MatF(int rows, int cols);
+    MatF(const MatF& other);
+    ~MatF();
 
-  // default ctor
-  MatF();
-
-  // ctor with dim
-  MatF(int rows, int cols);
-
-  // copy ctor
-  MatF(const MatF& other);
-
-  // dtor
-  ~MatF();
-
-  // fills the matrix with f;
-  void fill(float f);
-
-  // fills with random values;
-  void randFill();
+    MatF& operator=(const MatF& other);         // Deep copy
+    MatF operator+(const MatF& other) const;    // this + other
+    MatF operator-(const MatF& other) const;    // this - other
+    MatF operator*(float f) const;              // f*this
+    VecF operator*(const VecF& other) const;    // this * other
+    MatF operator*(const MatF& other) const;    // this * other
+    MatF transpose() const;                     // this^T
   
-  // read/write access to element at pos
-  float& at(int pos);
-  
-  // read access to element at pos
-  // const after () means that the method does not modify the invoking object
-  const float& at(int pos) const;
-
-  // read/write access to element at pos
-  float& at(int r, int c);
-  
-  // read access to element at pos
-  // const after () means that the method does not modify the invoking object
-  const float& at(int r, int c) const;
-
-  // op =, deep copy
-  MatF& operator =(const MatF& other);
-
-  // returns the sum this + other
-  MatF operator +(const MatF& other) const;
-
-  // returns the difference this - other
-  MatF operator -(const MatF& other) const;
-
-  // returns this * f
-  MatF  operator *(float f) const;
-
-  // returns this * other
-  VecF  operator *(const VecF& other) const;
-
-  // returns this * other
-  MatF  operator *(const MatF& other) const;
-
-  MatF transpose() const;
+    void fill(float f);     // Fill the matrix with f
+    void randFill();        // Fill the matrix with random values
+    float& at(int i);
+    const float& at(int i) const;
+    float& at(int r, int c);
+    const float& at(int r, int c) const;
 };
 
 std::ostream& operator <<(std::ostream& os, const MatF& v);

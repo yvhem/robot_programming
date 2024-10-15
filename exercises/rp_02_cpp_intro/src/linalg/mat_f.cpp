@@ -4,104 +4,94 @@
 
 using namespace std;
 
-//default ctor
 MatF::MatF(): rows(0), cols(0), dimension(0), v(nullptr) {}
 
-// ctor with dim
 MatF::MatF(int rows_, int cols_): 
     rows(rows_), cols(cols_), dimension(rows*cols), v(new float[dimension]) {}
 
-// copy ctor
 MatF::MatF(const MatF& other): MatF(other.rows, other.cols) {
-    for (int i=0; i<dimension; ++i) v[i]=other.v[i];
+    for (int i=0; i < dimension; ++i) v[i] = other.v[i];
 }
 
-// dtor
-MatF::~MatF() { if (dimension) delete [] v; }
+MatF::~MatF() { if (dimension) delete[] v; }
 
-void MatF::fill(float f) {
-    for (int i=0; i<dimension; ++i) v[i]=f;
-}
+MatF& MatF::operator=(const MatF& other) {
+    // Handle self-assignment
+    if (this == &other) return *this;
 
-void MatF::randFill() {
-    for (int i=0; i<dimension; ++i) v[i]=drand48();
-}
-
-// read/write access to element at pos
-float& MatF::at(int pos) {
-    return v[pos];
-}
-  
-// read access to element at pos
-// const after () means that the method does not modify the invoking object
-const float& MatF::at(int pos) const {
-    return v[pos];
-}
-
-// read/write access to element at pos
-float& MatF::at(int r, int c) {
-    return v[r*cols+c];
-}
-  
-// read access to element at pos
-// const after () means that the method does not modify the invoking object
-const float& MatF::at(int r, int c) const {
-    return v[r*cols+c];
-}
-
-// op =, deep copy
-MatF& MatF::operator =(const MatF& other) {
-    // TODO: fillme
+    // Rewrite the memory
+    delete[] v;
+    rows = other.rows; cols = other.cols; dimension = other.dimension;
+    v = new float[dimension];
+    for (int i=0; i < dimension; ++i) v[i] = other.v[i];
 
     return *this;
 }
 
-// returns the sum this + other
-MatF MatF::operator +(const MatF& other) const {
-    assert (other.cols==cols && other.rows==rows && "dim mismatch");
-    MatF returned (*this);
-
-    // TODO: fillme
-
-    return returned;
+MatF MatF::operator+(const MatF& other) const {
+    assert(other.cols == cols && other.rows == rows && "dim mismatch");
+    MatF result(*this);
+    for (int i=0; i < dimension; ++i) result.v[i] += other.v[i];
+    return result;
 }
 
-// returns the difference this - other
-MatF MatF::operator -(const MatF& other) const {
-
-    // TODO: fillme
-
+MatF MatF::operator-(const MatF& other) const {
+    assert(other.cols == cols && other.rows == rows && "dim mismatch");
+    MatF result(*this);
+    for (int i=0; i < dimension; ++i) result.v[i] -= other.v[i];
+    return result;
 }  
 
-// returns this*f
-MatF MatF::operator* (float f) const {
-    // TODO: fillme
+MatF MatF::operator*(float f) const {
+    MatF result(*this);
+    for (int i=0; i < dimension; ++i) result.v[i] *= f;
+    return result;
 }
 
-// returns this * other
-VecF MatF::operator *(const VecF& other) const {
-    assert(other.dim==cols && "dim mismatch");
-    VecF returned (rows);
-    // TODO: fillme
-    return returned;
+VecF MatF::operator*(const VecF& other) const {
+    assert(other.dim == cols && "dim mismatch");
+    VecF result(rows);
+    for (int r=0; r < rows; ++r) {
+        float accumulator = 0.f;
+        for (int c=0; c < cols; ++c) accumulator += at(r,c) * other.at(c);
+        result.at(r) = accumulator;
+    }
+    return result;
 }
 
-// returns this* other
-MatF MatF::operator *(const MatF& other) const {
-    assert(cols==other.rows && "dimension mismatch");
-    MatF returned(rows, other.cols);
-    //TODO: fillme
-    return returned;
+MatF MatF::operator*(const MatF& other) const {
+    assert(cols == other.rows && "dimension mismatch");
+    MatF result(rows, other.cols);
+    for (int dc = 0; dc < other.cols; ++dc) {
+        for (int r=0; r < rows; ++r) {
+            float& dest = result.at(r, dc);
+            dest = 0.f;
+            for (int c=0; c < cols; ++c) dest += at(r,c) * other.at(c,dc);
+        }
+    }
+    return result;
 }
 
 MatF MatF::transpose() const {
     MatF returned(cols, rows);
-    for (int r=0; r<rows; ++r)
-        for (int c=0; c<cols; ++c)
-            returned.at(c,r)=at(r,c);
+    for (int r=0; r < rows; ++r)
+        for (int c=0; c < cols; ++c)
+            returned.at(c,r) = at(r,c);
     return returned;
 }
 
+void MatF::fill(float f) {
+    for (int i=0; i<dimension; ++i) v[i] = f;
+}
+
+void MatF::randFill() {
+    for (int i=0; i<dimension; ++i) v[i] = drand48();
+}
+
+float& MatF::at(int i) { return v[i]; }  
+const float& MatF::at(int i) const { return v[i]; }
+float& MatF::at(int r, int c) { return v[r*cols+c]; }
+const float& MatF::at(int r, int c) const { return v[r*cols+c]; }
 
 std::ostream& operator <<(std::ostream& os, const MatF& m) {
     os << "{ ptr: " << &m <<", rows: " << m.rows << ",  cols: " << m.cols << endl;
