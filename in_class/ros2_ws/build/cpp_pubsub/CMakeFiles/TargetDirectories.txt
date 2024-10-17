@@ -1,0 +1,11 @@
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/uninstall.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/cpp_pubsub_uninstall.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/talker.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/listener.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/test.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/edit_cache.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/rebuild_cache.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/list_install_components.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/install.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/install/local.dir
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub/CMakeFiles/install/strip.dir

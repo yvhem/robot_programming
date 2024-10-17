@@ -1,0 +1,60 @@
+[0.019s] Invoking command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub
+[0.136s] -- The C compiler identification is GNU 13.2.0
+[0.264s] -- The CXX compiler identification is GNU 13.2.0
+[0.305s] -- Detecting C compiler ABI info
+[0.500s] -- Detecting C compiler ABI info - done
+[0.528s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.529s] -- Detecting C compile features
+[0.530s] -- Detecting C compile features - done
+[0.551s] -- Detecting CXX compiler ABI info
+[0.765s] -- Detecting CXX compiler ABI info - done
+[0.783s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.783s] -- Detecting CXX compile features
+[0.784s] -- Detecting CXX compile features - done
+[0.792s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.087s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.311s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.396s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.428s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.503s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.661s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.667s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.865s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.904s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.953s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.119s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.368s] -- Configuring done (2.3s)
+[2.408s] -- Generating done (0.0s)
+[2.415s] -- Build files have been written to: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub
+[2.435s] Invoked command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub
+[2.437s] Invoking command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub -- -j8 -l8
+[2.542s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.542s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[14.785s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[15.139s] [ 75%] Built target talker
+[21.207s] [100%] [32m[1mLinking CXX executable listener[0m
+[21.752s] [100%] Built target listener
+[21.776s] Invoked command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub -- -j8 -l8
+[21.866s] Invoking command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub
+[21.884s] -- Install configuration: ""
+[21.884s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[21.887s] -- Set non-toolchain portion of runtime path of "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[21.887s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[21.896s] -- Set non-toolchain portion of runtime path of "/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[21.897s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[21.897s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[21.898s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[21.901s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[21.901s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[21.901s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[21.902s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[21.902s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[21.902s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[21.903s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[21.903s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[21.903s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[21.904s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[21.904s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[21.904s] -- Installing: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[21.908s] Invoked command in '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/in_class/ros2_ws/build/cpp_pubsub
