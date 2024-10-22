@@ -3,15 +3,14 @@
 <package format="3">
   <name>rp_simple_controller</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Simple controller for turtlesim moving in a square trajectory</description>
   <maintainer email="giacomini@diag.uniroma1.it">rvp-00</maintainer>
-  <license>TODO: License declaration</license>
+  <license>License</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <!-- Add the package dependencies down here. Remember, rclcpp, geometry_msgs and turtlesim -->
   <depend>rclcpp</depend>
-  <!-- <depend>$DEPENDENCY</depend>-->
-  <!-- but not after this line -->
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>

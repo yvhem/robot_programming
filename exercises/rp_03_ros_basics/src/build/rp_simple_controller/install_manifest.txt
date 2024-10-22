@@ -1,0 +1,16 @@
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/lib/rp_simple_controller/turtle_square
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/package_run_dependencies/rp_simple_controller
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/parent_prefix_path/rp_simple_controller
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.sh
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.dsv
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.sh
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.dsv
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.bash
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.sh
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.zsh
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.dsv
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.dsv
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/packages/rp_simple_controller
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig.cmake
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig-version.cmake
+/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.xml

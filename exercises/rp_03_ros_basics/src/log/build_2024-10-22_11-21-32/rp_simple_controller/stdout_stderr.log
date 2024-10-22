@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+-- Configuring done (2.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+[01m[K/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In constructor ‘[01m[KTurtleSquareNode::[01;32m[KTurtleSquareNode[m[K()[m[K’:
+[01m[K/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:26:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TurtleSquareNode[m[K’ has no member named ‘[01m[Kcreate_subscriber[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+   26 |         position_sub = this->[01;31m[Kcreate_subscriber[m[K<turtlesim::msg::Pose>("/turtle1/pose", 10, std::bind(&TurtleSquareNode::pose_callback, this, std::placeholders::_1));
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                              [32m[Kcreate_subscription[m[K
+[01m[K/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:26:68:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |        position_sub = this->create_subscriber<turtlesim::msg::Pose[01;31m[K>[m[K("/turtle1/pose", 10, std::bind(&TurtleSquareNode::pose_callback, this, std::placeholders::_1));
+      |                                                                   [01;31m[K^[m[K
+
+[01m[K/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:26:70:[m[K [01;31m[Kerror: [m[Kleft operand of comma operator has no effect [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Werror=unused-value]8;;[m[K]
+   26 |      position_sub = this->create_subscriber<turtlesim::msg::Pose>([01;31m[K"/turtle1/pose"[m[K, 10, std::bind(&TurtleSquareNode::pose_callback, this, std::placeholders::_1));
+      |                                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:26:162:[m[K [01;31m[Kerror: [m[Kright operand of comma operator has no effect [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Werror=unused-value]8;;[m[K]
+   26 | 0, std::bind(&TurtleSquareNode::pose_callback, this, std::placeholders::_1[01;31m[K)[m[K);
+      |                                                                           [01;31m[K^[m[K
+
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

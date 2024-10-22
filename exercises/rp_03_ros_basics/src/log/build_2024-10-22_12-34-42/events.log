@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.001134] (rp_simple_controller) JobQueued: {'identifier': 'rp_simple_controller', 'dependencies': OrderedDict()}
+[0.001709] (rp_simple_controller) JobStarted: {'identifier': 'rp_simple_controller'}
+[0.017093] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'cmake'}
+[0.018382] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'build'}
+[0.019647] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller', '--', '-j8', '-l8'], 'cwd': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'fe', 'LC_TIME': 'it_IT.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fe', 'OLDPWD': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'LC_MONETARY': 'it_IT.UTF-8', 'SYSTEMD_EXEC_PID': '1975', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'fe', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fe', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'RBENV_SHELL': 'bash', 'PATH': '/opt/ros/jazzy/bin:/home/fe/.rbenv/shims:/home/fe/.rbenv/bin:/home/fe/.rbenv/shims:/home/fe/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fe/.rvm/bin:/home/fe/.cargo/bin', 'SESSION_MANAGER': 'local/yvhem:@/tmp/.ICE-unix/1713,unix/yvhem:/tmp/.ICE-unix/1713', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dd55ee69_4a9d_4726_9a8e_17aa102758f7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Z13VV2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'fcitx', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/fe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099652] (-) TimerEvent: {}
+[0.156739] (rp_simple_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o\x1b[0m\n'}
+[0.199818] (-) TimerEvent: {}
+[0.300216] (-) TimerEvent: {}
+[0.400633] (-) TimerEvent: {}
+[0.501092] (-) TimerEvent: {}
+[0.601585] (-) TimerEvent: {}
+[0.702070] (-) TimerEvent: {}
+[0.802509] (-) TimerEvent: {}
+[0.902943] (-) TimerEvent: {}
+[1.003379] (-) TimerEvent: {}
+[1.103846] (-) TimerEvent: {}
+[1.204273] (-) TimerEvent: {}
+[1.304722] (-) TimerEvent: {}
+[1.405162] (-) TimerEvent: {}
+[1.505609] (-) TimerEvent: {}
+[1.606060] (-) TimerEvent: {}
+[1.706493] (-) TimerEvent: {}
+[1.806888] (-) TimerEvent: {}
+[1.907325] (-) TimerEvent: {}
+[2.007760] (-) TimerEvent: {}
+[2.108221] (-) TimerEvent: {}
+[2.208677] (-) TimerEvent: {}
+[2.309122] (-) TimerEvent: {}
+[2.409561] (-) TimerEvent: {}
+[2.510041] (-) TimerEvent: {}
+[2.610476] (-) TimerEvent: {}
+[2.710908] (-) TimerEvent: {}
+[2.811285] (-) TimerEvent: {}
+[2.911671] (-) TimerEvent: {}
+[3.012134] (-) TimerEvent: {}
+[3.112580] (-) TimerEvent: {}
+[3.213038] (-) TimerEvent: {}
+[3.313448] (-) TimerEvent: {}
+[3.413882] (-) TimerEvent: {}
+[3.514307] (-) TimerEvent: {}
+[3.614736] (-) TimerEvent: {}
+[3.715190] (-) TimerEvent: {}
+[3.815589] (-) TimerEvent: {}
+[3.916029] (-) TimerEvent: {}
+[4.016454] (-) TimerEvent: {}
+[4.116880] (-) TimerEvent: {}
+[4.217305] (-) TimerEvent: {}
+[4.317732] (-) TimerEvent: {}
+[4.418168] (-) TimerEvent: {}
+[4.518595] (-) TimerEvent: {}
+[4.619049] (-) TimerEvent: {}
+[4.719482] (-) TimerEvent: {}
+[4.820034] (-) TimerEvent: {}
+[4.920464] (-) TimerEvent: {}
+[5.020892] (-) TimerEvent: {}
+[5.121325] (-) TimerEvent: {}
+[5.221735] (-) TimerEvent: {}
+[5.322199] (-) TimerEvent: {}
+[5.422635] (-) TimerEvent: {}
+[5.523102] (-) TimerEvent: {}
+[5.623540] (-) TimerEvent: {}
+[5.723972] (-) TimerEvent: {}
+[5.824439] (-) TimerEvent: {}
+[5.925128] (-) TimerEvent: {}
+[6.025571] (-) TimerEvent: {}
+[6.126030] (-) TimerEvent: {}
+[6.226434] (-) TimerEvent: {}
+[6.326904] (-) TimerEvent: {}
+[6.427374] (-) TimerEvent: {}
+[6.527827] (-) TimerEvent: {}
+[6.628257] (-) TimerEvent: {}
+[6.728708] (-) TimerEvent: {}
+[6.829184] (-) TimerEvent: {}
+[6.929637] (-) TimerEvent: {}
+[7.030119] (-) TimerEvent: {}
+[7.130567] (-) TimerEvent: {}
+[7.230995] (-) TimerEvent: {}
+[7.331423] (-) TimerEvent: {}
+[7.431877] (-) TimerEvent: {}
+[7.532282] (-) TimerEvent: {}
+[7.632759] (-) TimerEvent: {}
+[7.733232] (-) TimerEvent: {}
+[7.833651] (-) TimerEvent: {}
+[7.934023] (-) TimerEvent: {}
+[8.034369] (-) TimerEvent: {}
+[8.134750] (-) TimerEvent: {}
+[8.235412] (-) TimerEvent: {}
+[8.337279] (-) TimerEvent: {}
+[8.437869] (-) TimerEvent: {}
+[8.538223] (-) TimerEvent: {}
+[8.638663] (-) TimerEvent: {}
+[8.739478] (-) TimerEvent: {}
+[8.839883] (-) TimerEvent: {}
+[8.940318] (-) TimerEvent: {}
+[9.040674] (-) TimerEvent: {}
+[9.141058] (-) TimerEvent: {}
+[9.241621] (-) TimerEvent: {}
+[9.342234] (-) TimerEvent: {}
+[9.442721] (-) TimerEvent: {}
+[9.543246] (-) TimerEvent: {}
+[9.643705] (-) TimerEvent: {}
+[9.744085] (-) TimerEvent: {}
+[9.844497] (-) TimerEvent: {}
+[9.944866] (-) TimerEvent: {}
+[10.045247] (-) TimerEvent: {}
+[10.145631] (-) TimerEvent: {}
+[10.246080] (-) TimerEvent: {}
+[10.346460] (-) TimerEvent: {}
+[10.446818] (-) TimerEvent: {}
+[10.547171] (-) TimerEvent: {}
+[10.647528] (-) TimerEvent: {}
+[10.747987] (-) TimerEvent: {}
+[10.848431] (-) TimerEvent: {}
+[10.950496] (-) TimerEvent: {}
+[11.050977] (-) TimerEvent: {}
+[11.151468] (-) TimerEvent: {}
+[11.251935] (-) TimerEvent: {}
+[11.352490] (-) TimerEvent: {}
+[11.452978] (-) TimerEvent: {}
+[11.553360] (-) TimerEvent: {}
+[11.654070] (-) TimerEvent: {}
+[11.754559] (-) TimerEvent: {}
+[11.855062] (-) TimerEvent: {}
+[11.955488] (-) TimerEvent: {}
+[12.055902] (-) TimerEvent: {}
+[12.156371] (-) TimerEvent: {}
+[12.256866] (-) TimerEvent: {}
+[12.357264] (-) TimerEvent: {}
+[12.458179] (-) TimerEvent: {}
+[12.558662] (-) TimerEvent: {}
+[12.659182] (-) TimerEvent: {}
+[12.759635] (-) TimerEvent: {}
+[12.860145] (-) TimerEvent: {}
+[12.960705] (-) TimerEvent: {}
+[13.061177] (-) TimerEvent: {}
+[13.161632] (-) TimerEvent: {}
+[13.262124] (-) TimerEvent: {}
+[13.362576] (-) TimerEvent: {}
+[13.463034] (-) TimerEvent: {}
+[13.563572] (-) TimerEvent: {}
+[13.664062] (-) TimerEvent: {}
+[13.764477] (-) TimerEvent: {}
+[13.864910] (-) TimerEvent: {}
+[13.965365] (-) TimerEvent: {}
+[14.066260] (-) TimerEvent: {}
+[14.166708] (-) TimerEvent: {}
+[14.267180] (-) TimerEvent: {}
+[14.367630] (-) TimerEvent: {}
+[14.468100] (-) TimerEvent: {}
+[14.568548] (-) TimerEvent: {}
+[14.668991] (-) TimerEvent: {}
+[14.769430] (-) TimerEvent: {}
+[14.869898] (-) TimerEvent: {}
+[14.970330] (-) TimerEvent: {}
+[15.070778] (-) TimerEvent: {}
+[15.171238] (-) TimerEvent: {}
+[15.271653] (-) TimerEvent: {}
+[15.372119] (-) TimerEvent: {}
+[15.472568] (-) TimerEvent: {}
+[15.573002] (-) TimerEvent: {}
+[15.673406] (-) TimerEvent: {}
+[15.773861] (-) TimerEvent: {}
+[15.874309] (-) TimerEvent: {}
+[15.974752] (-) TimerEvent: {}
+[16.075195] (-) TimerEvent: {}
+[16.175613] (-) TimerEvent: {}
+[16.276063] (-) TimerEvent: {}
+[16.376495] (-) TimerEvent: {}
+[16.476958] (-) TimerEvent: {}
+[16.577579] (-) TimerEvent: {}
+[16.678027] (-) TimerEvent: {}
+[16.778434] (-) TimerEvent: {}
+[16.878849] (-) TimerEvent: {}
+[16.979262] (-) TimerEvent: {}
+[17.079687] (-) TimerEvent: {}
+[17.180334] (-) TimerEvent: {}
+[17.281019] (-) TimerEvent: {}
+[17.381716] (-) TimerEvent: {}
+[17.482206] (-) TimerEvent: {}
+[17.582636] (-) TimerEvent: {}
+[17.683110] (-) TimerEvent: {}
+[17.783594] (-) TimerEvent: {}
+[17.870060] (rp_simple_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtle_square\x1b[0m\n'}
+[17.883755] (-) TimerEvent: {}
+[17.984196] (-) TimerEvent: {}
+[18.084676] (-) TimerEvent: {}
+[18.185201] (-) TimerEvent: {}
+[18.288972] (-) TimerEvent: {}
+[18.389584] (-) TimerEvent: {}
+[18.490038] (-) TimerEvent: {}
+[18.590475] (-) TimerEvent: {}
+[18.690887] (-) TimerEvent: {}
+[18.765731] (rp_simple_controller) StdoutLine: {'line': b'[100%] Built target turtle_square\n'}
+[18.791034] (-) TimerEvent: {}
+[18.805815] (rp_simple_controller) CommandEnded: {'returncode': 0}
+[18.861469] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'install'}
+[18.882759] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller'], 'cwd': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'fe', 'LC_TIME': 'it_IT.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/fe', 'OLDPWD': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/rp_simple_controller', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'LC_MONETARY': 'it_IT.UTF-8', 'SYSTEMD_EXEC_PID': '1975', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'fe', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fe', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'RBENV_SHELL': 'bash', 'PATH': '/opt/ros/jazzy/bin:/home/fe/.rbenv/shims:/home/fe/.rbenv/bin:/home/fe/.rbenv/shims:/home/fe/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/fe/.rvm/bin:/home/fe/.cargo/bin', 'SESSION_MANAGER': 'local/yvhem:@/tmp/.ICE-unix/1713,unix/yvhem:/tmp/.ICE-unix/1713', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dd55ee69_4a9d_4726_9a8e_17aa102758f7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Z13VV2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/fe/OneDrive/Università/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/build/rp_simple_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CLUTTER_IM_MODULE': 'fcitx', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/fe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.891182] (-) TimerEvent: {}
+[18.905509] (rp_simple_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.906189] (rp_simple_controller) StdoutLine: {'line': b'-- Installing: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/lib/rp_simple_controller/turtle_square\n'}
+[18.921513] (rp_simple_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/lib/rp_simple_controller/turtle_square" to ""\n'}
+[18.922112] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/package_run_dependencies/rp_simple_controller\n'}
+[18.922697] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/parent_prefix_path/rp_simple_controller\n'}
+[18.923394] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.sh\n'}
+[18.923732] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.dsv\n'}
+[18.924018] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.sh\n'}
+[18.924396] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/environment/path.dsv\n'}
+[18.924686] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.bash\n'}
+[18.925043] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.sh\n'}
+[18.925250] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.zsh\n'}
+[18.925446] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/local_setup.dsv\n'}
+[18.925645] (rp_simple_controller) StdoutLine: {'line': b'-- Installing: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.dsv\n'}
+[18.925890] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/ament_index/resource_index/packages/rp_simple_controller\n'}
+[18.926104] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig.cmake\n'}
+[18.926297] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig-version.cmake\n'}
+[18.926491] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /home/fe/OneDrive/Universit\xc3\xa0/AIRO/Robot Programming/robot_programming/exercises/rp_03_ros_basics/src/install/rp_simple_controller/share/rp_simple_controller/package.xml\n'}
+[18.928113] (rp_simple_controller) CommandEnded: {'returncode': 0}
+[18.991325] (-) TimerEvent: {}
+[19.033847] (rp_simple_controller) JobEnded: {'identifier': 'rp_simple_controller', 'rc': 0}
+[19.036953] (-) EventReactorShutdown: {}
