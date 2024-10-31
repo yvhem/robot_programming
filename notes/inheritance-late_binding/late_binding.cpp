@@ -4,45 +4,45 @@ using namespace std;
 
 /* Inheritance. */
 class A {
-    public:
-        A(int value_) : _value(value_) {}
+public:
+    A(int value_) : _value(value_) {}
 
-        void print() {
-            cerr << "A: [" << this << "], value: " << _value << endl;
-        }
-    protected:
-        int _value;
+    void print() {
+        cerr << "A: [" << this << "], value: " << _value << endl;
+    }
+protected:
+    int _value;
 };
 
 class B: public A {
-    public:
-        B(int value_) : A(value_) {}
+public:
+    B(int value_) : A(value_) {}
 
-        void print() {
-            cerr << "B: [" << this << "], value: " << _value << endl;
-        }
+    void print() {
+        cerr << "B: [" << this << "], value: " << _value << endl;
+    }
 };
 /* ############ */
 
 /* Inheritance + Late Binding. */
 class A_lb {
-    public:
-        A_lb(int value_) : _value(value_) {}
+public:
+    A_lb(int value_) : _value(value_) {}
 
-        virtual void print() {
-            cerr << "A_lb: [" << this << "], value: " << _value << endl;
-        }
-    protected:
-        int _value;
+    virtual void print() {
+        cerr << "A_lb: [" << this << "], value: " << _value << endl;
+    }
+protected:
+    int _value;
 };
 
 class B_lb: public A_lb {
-    public:
-        B_lb(int value_) : A_lb(value_) {}
+public:
+    B_lb(int value_) : A_lb(value_) {}
 
-        void print() override {
-            cerr << "B_lb: [" << this << "], value: " << _value << endl;
-        }
+    void print() override {
+        cerr << "B_lb: [" << this << "], value: " << _value << endl;
+    }
 };
 /* ########################### */
 
