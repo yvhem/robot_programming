@@ -9,5 +9,5 @@ The main purpose of this repository is to store every piece of code I encounter 
 ## Covered topics
 Below is the course syllabus:
 - [x] CMake
-- [ ] C++
-- [ ] ROS2
+- [x] C++
+- [x] ROS2
