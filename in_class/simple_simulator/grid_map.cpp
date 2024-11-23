@@ -4,12 +4,13 @@
 // Constructors
 GridMap::GridMap(int rows, int cols, float res, WorldItem* p,
                  const Isometry2f& pose_in_parent_):
-        Grid(rows, cols), WorldItem(parent), resolution(res), 
+        Grid(rows, cols), WorldItem(p), resolution(res), 
         inv_resolution(1./res), grid_origin(rows/2, cols/2), _piw(poseInWorld()), 
         _ipiw(poseInWorld().inverse()) { 
-    WorldItem::pose_in_parent = pose_in_parent; 
+    WorldItem::pose_in_parent = pose_in_parent_; 
 }
 
+/* Loads from image. */
 GridMap::GridMap(const char* filename, float res, WorldItem* p,
                  const Isometry2f& pose_in_parent_): WorldItem(p) {
     pose_in_parent = pose_in_parent_;

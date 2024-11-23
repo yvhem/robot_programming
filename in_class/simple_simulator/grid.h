@@ -6,11 +6,12 @@
 #include "canvas.h"
 
 struct Grid {
-    // Fields
     using CellType = uint8_t;
+    
+    // Fields
     int rows = 0;
     int cols = 0;
-    CellType** values = nullptr;
+    CellType* values = nullptr;
 
     // Constructor
     Grid(int rows=0, int cols=0);

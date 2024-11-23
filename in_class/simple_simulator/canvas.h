@@ -12,11 +12,12 @@ struct Canvas {
     Vec2f canvas_origin = Vec2f(0, 0);
 
     // Methods
-    void init(int r, int c, float res);
+    void init(int r, int c, float res); /* Build a canvas. */
     inline int rows() const { return draw_image.rows; }
     inline int cols() const { return draw_image.cols; }
-    inline Vec2f w2c(const Vec2f& wp) const { return _w2c*wp; }
-    inline Vec2f c2w(const Vec2f& cp) const { return _c2w*cp; }
+    inline Vec2f w2c(const Vec2f& wp) const { return _w2c*wp; } // world 2 canvas
+    inline Vec2f c2w(const Vec2f& cp) const { return _c2w*cp; } // canvas 2 world
+    /* Check whether an element in the world is visible to the canvas. */
     inline bool inside(const Vec2f& wp) {
         Vec2f cp = w2c(wp);
         return cp.x() < 0 || cp.x() >= draw_image.rows

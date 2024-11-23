@@ -6,14 +6,22 @@
 #include "linalg.h"
 #include "canvas.h"
 
+// Forward declaration
 struct WorldItem;
 struct World;
 
 struct WorldItemVector {
-    // Fields
     using ItemType = WorldItem*;
+    
+    // Fields
     int _size = 0;
     ItemType* _values = 0;
+
+    // Operator overload
+    inline const ItemType& operator[](int pos) const { // equivalent to at(pos)
+        if (pos < 0 || pos >= _size) throw std::runtime_error("out of bounds");
+        return _values[pos];
+    }
 
     // Methods
     inline int size() const { return _size; }
@@ -23,13 +31,13 @@ struct WorldItemVector {
         return _values[pos];
     }
     
-    inline const ItemType& at(int pos) const {
+    inline const ItemType& at(int pos) const { // equivalent to operator[]
         if (pos < 0 || pos >= _size) throw std::runtime_error("out of bounds");
         return _values[pos];
-    }
+    } 
     
     void resize(int new_size);
-    void pushBack(ItemType item);
+    void pushBack(ItemType item); // Append and resize
 }
 
 struct WorldItem {
@@ -44,10 +52,11 @@ struct WorldItem {
 
     // Methods
     virtual World* getWorld();
-    bool isDescendant(const WorldItem* ancestor) const;
+    bool isDescendant(const WorldItem* ancestor) const; /* Iterative check */
     virtual bool canCollide(const WorldItem* other) const;
     Isometry2f poseInWorld() const;
-    virtual bool collides(const WorldItem* other) const;
+    /* Check for intersections .*/
+    virtual bool collides(const WorldItem* other) const; 
     virtual void timerTick(float dt);
     virtual void draw(Canvas& canvas) const;
 };

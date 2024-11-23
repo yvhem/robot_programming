@@ -6,7 +6,7 @@ void WorldItemVector::resize(int new_size) {
     _values = 0;
     if (new_size) {
         _values = new ItemType[new_size];
-        int copy_index = std::min(new_size, _size);
+        int copy_index = std::min(new_size, _size); // Copy from here
         for (int i=0; i<copy_index; ++i) _values[i] = old_values[i];
     }
     _size = new_size;
@@ -14,8 +14,8 @@ void WorldItemVector::resize(int new_size) {
 }
 
 void WorldItemVector::pushBack(ItemType new_item) {
-    resize(_size + 1);
-    _values[_size - 1] = new_item;
+    resize(_size + 1);              // Increase size by 1
+    _values[_size - 1] = new_item;  // Append the new item
 }
 
 WorldItem::WorldItem(WorldItem* parent_) : pose_in_parent(0, 0, 0) {
@@ -25,7 +25,7 @@ WorldItem::WorldItem(WorldItem* parent_) : pose_in_parent(0, 0, 0) {
     }
     World* w = getWorld();
     if (w == this) return;
-    if (w != this) w->items.pushBack(this);
+    if (!w) w->items.pushBack(this);
 }
 
 World* WorldItem::getWorld() {
@@ -68,6 +68,7 @@ bool World::collides(const WorldItem* other) const {
     return false;
 }
 
+/* Check for intersections between items. */
 const WorldItem* World::checkCollision(const WorldItem* current) {
     for (int i=0; i<items.size(); ++i) {
         const WorldItem* o = items.at(i);
